@@ -3,14 +3,9 @@ import { Link } from "react-router-dom";
 import PostCard from "../components/PostCard";
 import useFetchApi from "../Hooks/useFetchApi";
 import CallToAction from "../components/CallToAction";
-import Loader from "../components/Loader" 
-<<<<<<< HEAD
+import Loader from "../components/Loader";
 const Home = () => { 
-    const { data, loading, error } = useFetchApi("post/posts");     
-=======
-const Home = () => {
-    const { data, loading, error } = useFetchApi("post/posts");  
->>>>>>> d3349c56c241e10bbb7e0536799009f9327bef9b
+    const { data, loading, error } = useFetchApi("post/posts"); 
     return (
         <>
             <section className="banner mb-4">

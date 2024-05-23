@@ -113,7 +113,7 @@ const UpdatePost = () => {
                         <div className="w-full my-2">
                             <ReactQuill onChange={(value) => {
                                 setFormData({ ...formData, content: value });
-                            }} value={formData.content} theme="snow" placeholder="Write something" className="h-72 mb-10 text-black dark:text-white text-xl" />
+                            }} value={formData.content || data?.posts && data?.posts[0]?.content} theme="snow" placeholder="Write something" className="h-72 mb-10 text-black dark:text-white text-xl" />
                         </div>
                     </div>
                     <div className=" p-1 w-full">
